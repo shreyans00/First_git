@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 300px 100px 500px; */
+        /* this gives column (horizontal) size of 4 columns */
+
+        /* grid-template-columns: 300px auto 100px; */
+
+        /* grid-template-columns: 1fr 4fr 1fr; */ 
+        /* this fr divide whole screen in 1+4+1 parts and distribute accordingly */
+
+        /* grid-template-columns: repeat(3, auto); */
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+
+        grid-template-columns: repeat(5, 1fr); 
+        /* this gives same column(horizontal) size of each 5 columns */
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 2rem;
+    }
+    
+    .item{
+        background-color:  rgb(228, 188, 228);
+        border: 2px solid black;
+        padding: 15px 5px;
+    }
+
+    .item:first-child {
+        /* changes position and size (starting and ending grid of its row and column) of 1st element and others are arranged accordingly */
+
+        /* grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5; */
+
+        grid-column: 2 / span 3;
+        /* it means start from column 2 and span(merge) 3 columns */
+        grid-row: 2 / span 3;
+
+        padding: 160px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item 1</div>
+        <div class="item">This is item 2</div>
+        <div class="item">This is item 3</div>
+        <div class="item">This is item 4</div>
+        <div class="item">This is item 5</div>
+        <div class="item">This is item 6</div>
+        <div class="item">This is item 7</div>
+        <div class="item">This is item 8</div>
+        <div class="item">This is item 9</div>
+        <div class="item">This is item 10</div>
+        <div class="item">This is item 11</div>
+        <div class="item">This is item 12</div>
+        <div class="item">This is item 13</div>
+        <div class="item">This is item 14</div>
+        <div class="item">This is item 15</div>
+        <div class="item">This is item 16</div>
+    </div>
+</body>
+</html>

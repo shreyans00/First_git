@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+    
+    let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja", "Akash"];
+
+    // Apart from the tradition loops like for, while, do-while, we can also use below syntax
+
+    friends.forEach(function f(element){
+        console.log("Hello, " + element + " to modern JavaScript");
+    });
+
+    for (element of friends){
+        console.log("Hello Friend, " + element + " to modern JavaScript again");
+    }
+
+    let employee = {
+        name: "Harry",
+        salary: 2,
+        channel: "CWH"
+    }
+
+    // Use this loop to iterate over objects in JavaScript
+    for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+
+    </script>
+</body>
+</html>

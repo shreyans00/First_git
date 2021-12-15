@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid + Media Queries</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: rgb(224, 115, 115);
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        body {
+            background-color: rgb(105, 105, 163);
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width:800px) {
+        body {
+            background-color: rgb(160, 160, 95);
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 800px) {
+        body {
+            background-color: rgb(75, 117, 75);
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    } 
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container ">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span> 
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure obcaecati ipsam libero quam magnam ab laboriosam, illo corporis repellendus quas! Obcaecati perferendis cumque quibusdam nisi quos velit beatae et mollitia, fuga libero quod corrupti quisquam neque aut maxime, repellendus nemo ipsam modi rem a harum quidem. Assumenda aperiam fugit ullam.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright CodeWithHarry 2020</footer>
+
+</body>
+
+</html>

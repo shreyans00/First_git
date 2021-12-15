@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    
+    <script>
+        // Alert is in-browser JavaScript - Does not return anything but you have to agree this before moving to the page
+        alert("This is a message which pop up"); 
+
+        // Prompt in JS - Its input is being collected by script
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        // Confirm in JS - It returns true or false
+        let deletePost = confirm("Do you really want to delete this post?");
+     
+        if(deletePost){
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+
+    </script>
+</body>
+</html>

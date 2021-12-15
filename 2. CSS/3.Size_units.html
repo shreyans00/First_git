@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+        
+        .container {
+            width:100vw;
+            height:100vh;
+            border: 2px solid coral;
+            font-size:15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size:20px;
+        }
+
+        #H1 {
+            font-size: 3em; 
+            /* change in font-size of container changes this */
+            /* so, its font-size is 3*15 = 45 */
+            padding: 2em;
+            /* padding = 2*45 = 90 */
+        }
+
+        #H2 {
+            font-size: 3rem;
+            /* change in font-size of html changes this */
+            /* so, its font-size is 3*10 = 30 */
+            padding: 2rem;
+            /* padding = 2*10 = 20 */
+        }
+
+        #H3 {
+            /* change in font-size of h1 changes this */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="H1">This is 1st heading</h1>
+        <h1 id="H2">This is 2nd heading</h1>
+        <h1 id="H3">This is 3rd heading</h1>
+    </div>
+</body>
+</html>

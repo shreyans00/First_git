@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow functions tutorial.
+    </div>
+    <script>
+    // Arrow function
+    // let greet =  ()=> {
+    //     console.log('Good morning');
+    // }
+
+    let greet =  () => console.log('Good morning bosdiwalon'); // if you don't want to pass any parameter
+    greet();
+    
+    // let sum2 = (a, b)=>{
+    //     return a+b;
+    // };
+    let sum2 = (a, b) => a+b; 
+    let half = a => a/2;  
+
+    setTimeout(() => {
+        console.log("We are inside setTimeOut😍");
+    }, 3000);
+
+    let obj1={
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "Kalam"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log(this.greeting + " My dear " + student);   
+                // here "this" directly used to call obj1, so you can also use obj1 instead of "this"
+            });
+        }
+    }
+    obj1.speak();  // here you can't use "this"
+
+    </script>
+</body>
+</html>

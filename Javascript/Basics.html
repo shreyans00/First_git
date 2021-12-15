@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Content of the body</h1>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse omnis aliquid quibusdam, obcaecati est rem!</p>
+        </div>
+        <script>
+            var a = 2000;
+            var b = "ram";
+            var c = "sita";
+            var temp = `${b} is the "god" and he married to ${c} in ${a}`;
+            console.log(b+' '+c);
+            console.log(temp);
+            var d = b.a;
+            console.log(`Length of the name is ${d}`);
+            console.log(`Length of the name is ${b.length}`);
+            var e = "This is javascript";
+            console.log(e);
+
+            // first and last occurence of a substring 
+            var position = e.indexOf("is");
+            console.log(position);
+            position = e.lastIndexOf('is');
+            console.log(position);
+
+            // Substring from a string (3 ways)
+            var substr = e.slice(1,6);
+            console.log(substr);
+            substr = e.substring(1,6);
+            console.log(substr);
+            substr = e.substr(1,6);
+            console.log(substr);
+
+            // Replace a string
+            var replaced = e.replace("javascipt","string");
+            console.log(replaced);
+
+            console.log(e.toUpperCase());
+            console.log(e.charAt(2));
+
+            // trim function trim start and end whitespaces only
+            var strWithWhitespaces = "    this   contains   whitespaces    ";
+            console.log(strWithWhitespaces);
+            console.log(strWithWhitespaces.trim());
+            
+            // scope of "var" is global while scope of "let" is under that block only(we prefer to use let) and "const" can't be changed anywhere
+            const f = "This can't be changed";
+            console.log(f);
+
+            var g = new String("that");
+            console.log(g);
+
+            let employee = {
+                name: "Harry",
+                salary: 10000000,
+                channel: "CodeWithHarry",
+                "channel 2": "ProgrammingWithHarry",
+            }
+            console.log(employee);
+
+            let names = [1, 2, 4, "Harry", undefined];  
+            names = new Array(41, 2, 4, "Harry", undefined);
+            //above 2 are ways to create an array
+            // names = new Array(23);    This represent an array of 23 empty elements
+            console.log(names.length);
+            names = names.sort();
+            names.push("this is pushed");
+            console.log(names);
+
+            document.getElementById('content').innerHTML='<h3>Content of that id of the body can be changed in javascipt as well</h3>'
+
+        </script>
+    </div>
+</body>
+</html>

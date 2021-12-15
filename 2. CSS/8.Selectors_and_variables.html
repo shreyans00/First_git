@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More on selectors</title>
+</head>
+<style>
+
+    :root {
+        /* Notations for particular feature */
+        --primary: rgb(207, 57, 57);
+        --secondary: green;
+        --font: 20px;
+        /* if you declare these variables inside class or id, then it can only be accessible under that one */
+    }
+
+    h1{
+        background-color: var(--primary);
+        color: rgba(24, 17, 2, 0.637);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* if p is contained by any li which is contained by div */
+    div li p{
+        color: rgb(177, 192, 39);
+        background-color: var(--secondary);
+        display:inline;
+    }
+
+    /* if p is right inside div (div is 1st parent of p) then this CSS will be applied */
+    div > p{
+        color: #fcf7f7;
+        background-color: rgb(30, 93, 177);
+        font-size: var(--font);
+    }
+
+    /* if p is right after div i.e p is the next sibling of div*/
+    div + p{
+        background-color: rgb(238, 137, 137);
+    }
+
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div>
+        <div>
+            <ul>
+                <li><p> this is another paragraph inside li</p></li> 
+                <li>this will not get affected</li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph which has both div > p and div + p attributes</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+<!-- CSS Position: static(default), absolute, relative, fixed, sticky 
+    static is default
+    relative: relative to its normal position and will leave a gap at its normal position
+    absolute: relative to the position of its first parent and next elements will acquire its normal position
+    fixed: relative to the browser window, to fix any content at same position even if we scroll
+    sticky: to stick the element if you scroll
+-->
+
+<!-- 
+    visibility:hidden: hides the image but its space is still reserved.
+    display:none : hides the image and also its space can be filled by others.
+ -->
+<!doctype html>
+<html>
+<head>
+    <title>Postitioning</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+    p {
+        color:rgb(72, 72, 179);
+    }
+    
+    .large {
+        font-size:200%;
+    }
+        
+    #colour {
+        color:green;
+    }
+        
+    .underline {
+        text-decoration:underline;
+    } 
+    .bold {
+        font-weight:bold;
+    }
+
+    div {
+        background-color: aquamarine;
+        width:300px;
+        height:100px;
+    }
+
+    .bluebox {
+        background-color:rgb(163, 162, 235);
+        height:120px;
+        position:relative;
+        top:-100px;
+        z-index:3;
+        margin-top:50px;
+    }
+
+    .redbox {
+        background-color: coral;
+        position:relative;
+        left:100px;     
+        top:100px;
+        z-index:2;
+    }
+
+    .greenbox {
+        background-color:rgb(12, 190, 190);
+        position:absolute;
+        /* here its first parent is body */
+        z-index:-2;
+    }
+
+    #yellow {
+        background-color: rgb(226, 226, 10);
+        position:fixed;
+        right: 40px;
+    }
+
+    #upper {
+        margin: 20px 400px;
+    }
+    </style> 
+ 
+</head>
+<body>
+    
+    <p id="yellow">This is always fixed even if you scroll</p>
+
+    <div class="redbox">
+        <p>This is being hid by violet box as its z-axis</p>
+    </div>
+    
+    <div class="bluebox">
+        <p class="large">This is some text.</p>
+    </div>
+	 	
+    <p id="colour" class="large greenbox">This is some more text.</p>
+
+    <p id="upper">The third <span class="underline large bold">word</span> in this paragraph is underlined.</p>
+
+    <br><h3>Don't read these contents, it is to show how fixed postion look like</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis error dolores cupiditate repudiandae quod velit voluptatibus, ea veniam, sunt quae eveniet obcaecati, in maiores ipsum est distinctio quas. Laboriosam rerum, obcaecati recusandae minus perferendis dolores molestiae dicta? Voluptatem eos inventore debitis ullam voluptate deserunt, asperiores voluptatibus fuga error dolore. Possimus maiores harum ut vitae inventore neque recusandae corrupti nobis laborum suscipit eaque expedita vel sunt deserunt repellendus impedit dolores fuga illum, fugit delectus odit eveniet dolore nostrum. Enim ducimus, odit mollitia cupiditate quod molestias reprehenderit, dolores maxime ullam quaerat ratione facilis laborum possimus cumque magnam dicta reiciendis natus magni, quasi quos rem! Commodi pariatur nesciunt quibusdam voluptate minima. Sit aperiam fuga incidunt debitis sed quia saepe voluptas doloremque, accusantium facilis cum consequuntur? Optio illo nulla unde odio dignissimos minima repudiandae quisquam minus nostrum? Ipsum, debitis. Veritatis unde in, sunt saepe id commodi obcaecati reprehenderit numquam, magnam, pariatur nesciunt vero ratione! Illo non libero voluptatum consectetur voluptates quisquam quos quo nulla, quae omnis alias maxime doloribus natus minima cumque necessitatibus incidunt tempore sunt, deserunt deleniti voluptatem asperiores animi excepturi aut? Ratione laudantium impedit nostrum facilis. Officia hic porro blanditiis vitae ipsum pariatur aspernatur, illo recusandae fugiat libero. Unde quae deserunt aperiam quod dicta ipsum maxime facilis laudantium provident ex iusto, iure quibusdam assumenda eos totam pariatur veniam minus aliquam debitis consectetur voluptatum. Labore cumque eligendi obcaecati, consequuntur ullam ex similique veritatis nisi esse perferendis expedita! Nesciunt in velit dicta voluptatum, neque incidunt? Esse placeat earum molestiae exercitationem quidem qui, aspernatur sequi ullam nulla, quae at autem incidunt totam aliquam enim ipsum dolores cum corrupti doloremque velit repudiandae voluptate. Porro obcaecati enim maxime culpa impedit dolorum vitae dolorem nihil consequatur. Illo voluptates voluptatum enim ut repudiandae dolorem voluptate sint velit architecto ipsum vitae necessitatibus atque quod delectus natus quos, assumenda quisquam quas nam. Quam quisquam excepturi facilis corporis reiciendis quaerat, cumque voluptas, nam velit perferendis debitis ipsam vero amet quod quas eos, recusandae exercitationem laboriosam tempora veritatis. Aspernatur soluta, cupiditate nemo adipisci blanditiis et optio voluptatum fugiat eum fugit. Qui, sequi magni, doloremque nulla saepe perferendis deleniti consectetur, obcaecati earum quia sunt repudiandae harum odit quod dolor eligendi enim voluptatum dolorem rerum temporibus non odio quaerat culpa placeat? Qui non harum assumenda neque facere laboriosam est, illo modi exercitationem eius molestiae nam. Sed eum saepe aspernatur incidunt ea illum nostrum labore officiis delectus. Sapiente blanditiis similique facilis dignissimos qui? Eligendi voluptate cumque facilis inventore ducimus iusto quo at temporibus vel excepturi! Illo dolor minus nostrum explicabo nam vero sapiente quas quo perferendis? Nulla non, perferendis quasi eligendi impedit qui? Libero fugit molestiae dolorum iure at id, suscipit quae incidunt illo repellat asperiores natus expedita deserunt pariatur blanditiis minus placeat maxime! Quasi, assumenda corporis! Eveniet provident pariatur, quod id reprehenderit debitis ea repellat architecto obcaecati. Adipisci, officiis! Dolorum quibusdam quisquam explicabo, modi iste libero, excepturi architecto veniam ipsum veritatis a animi ad tempora adipisci quos tempore pariatur in praesentium asperiores unde voluptates! Enim tenetur dolores reiciendis voluptate autem repudiandae nemo voluptates vero ab veritatis, ullam commodi quam fuga similique est mollitia. Commodi porro id dolorem. Quo, ab dicta. Esse, repellendus in at commodi veniam consectetur harum tenetur repellat veritatis dicta dolore accusamus accusantium tempore voluptates perspiciatis natus expedita maxime? Magni sit illo soluta, non porro asperiores, aliquid quibusdam animi eaque expedita velit unde! Sint voluptates, consectetur eius et porro ullam ea incidunt tenetur! Laborum commodi ea, tenetur culpa laudantium quod voluptatem molestiae quam ipsum at, voluptas repellat amet fugiat, illum dolor? Earum expedita consectetur odit. Saepe ipsam quisquam non dolorem repellendus, temporibus numquam sequi possimus vel necessitatibus incidunt expedita deleniti, repellat eius. Aperiam ullam culpa porro cum magnam aliquam similique omnis, earum consequatur nobis aspernatur sapiente nesciunt excepturi odio sequi! Earum, aliquid id? Incidunt dolorem dolor maiores reiciendis sint iste fuga. Provident molestiae aspernatur, porro, dolorum maxime dolores velit eligendi neque incidunt impedit est. Ex sunt totam maxime, distinctio consectetur alias sed dicta ratione mollitia inventore tempore? Eaque a rerum possimus recusandae nam eveniet dolorem quidem impedit cumque debitis, ea sapiente quas veritatis ratione dignissimos, quasi voluptate nesciunt repellendus doloremque! Deleniti inventore totam commodi, tenetur ex molestias! Suscipit esse tempore veniam asperiores cum aperiam error vero natus dignissimos, repudiandae perferendis voluptatum nobis?
+    </p>
+
+</body>
+</html>
+ 

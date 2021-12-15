@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container {
+            /* for taking entire content into middle */
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+
+        input[type='text'] {
+            padding: 15px;
+            margin-bottom: 8px;
+            border: 2px solid rgb(175, 44, 44);
+        }
+
+        a[target] {
+            /* applies to all target either blank or self */
+            font-size: 30px;
+            color: violet;
+        }
+
+        a[target='_self'] {
+            color: rgb(13, 22, 151);
+        }
+
+        input[type='email'] {
+            color: rgb(47, 170, 53);
+            border: 2px solid black;
+            margin-bottom: 8px;
+        }
+
+        /* This will apply css for only third child of ul*/
+        li:nth-child(3){
+            color: cyan;
+        }
+
+        li:nth-child(2n){
+            color: red;
+        }
+
+        li:nth-child(3n+2) {
+            color: rgb(63, 216, 122);
+        }
+
+        /* Odd child */
+        li:nth-child(odd){
+            font-family: cursive;
+        }
+
+        /* Even child */
+        li:nth-child(even) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank"><img src="https://www.google.com/search?q=image+of+google&sxsrf=AOaemvJ7T1LLwgMDZ1Wh7Lh5sj2N0l3VhA:1639486011767&tbm=isch&source=iu&ictx=1&fir=7fEVakcJUgrsmM%252CqfPPp-mRFi6Y6M%252C_%253Btarj9Uj56GD3xM%252C_Qj6mz-Y48rawM%252C_%253B5gOXiKVIdIChQM%252CqnYo4uvekED4CM%252C_%253BJuwRh6cOZ3v2HM%252COB7nUMlpyNPf9M%252C_%253BpYly-QukqnR3oM%252C1xm1gZcKXY2pHM%252C_%253BwNsZSiIPru5UcM%252Ct1UueLxFfDxYVM%252C_%253BRMU9Ir6uwl8EFM%252Cbbn9qBh_04da6M%252C_%253Bmx3kmoGEukhFSM%252CMgdJNgTXFhFo9M%252C_%253BP1eWANgEqhDaQM%252CX0E7XNNjToP4_M%252C_%253BKNs_VfGY15IwhM%252CPUw-g6RaiaUvMM%252C_%253BOHRy5bbkAcn8vM%252C6QMoGEfM5tRhAM%252C_%253BcorfXlb154MdoM%252Cng4zYKAUg2CPGM%252C_&vet=1&usg=AI4_-kQ39vxq4m4GlNTU1bSVczEK98fK6g&sa=X&ved=2ahUKEwj_r-GqqeP0AhVpyjgGHTtKBpgQ9QF6BAgDEAE#imgrc=7fEVakcJUgrsmM"></a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="#" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    
+    </div>
+</body>
+
+</html>

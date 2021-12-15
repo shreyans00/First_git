@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <title>Forms</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A jouney of a thousand miles begins with a single step." />
+
+</head>
+
+<body>
+<div>
+    <form action="URL of the page u want to link with" target="_blank" autocomplete="on" >
+    <!--The action attribute defines the action to be performed when the form is submitted. 
+        Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+        The target attribute specifies where to display the response that is received after submitting the form.-->
+        <p><strong>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</strong></p>
+
+        <fieldset>
+            <legend>fieldset and legend are only to group all these form elements, nothing else</legend>
+        <table>
+             <!-- tr is for row, th is for heading, td is for data elements -->
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>	 	
+            <tr>
+                <td>Rob</td>
+                <td>33</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Kirsten</td>
+                <td>34</td>
+                <td>Female</td></tr>
+            <tr>
+                <td>Tominson Berley</td>
+                <td>3</td>
+                <td>Male</td>
+            </tr>
+        </table>
+            
+        <hr>
+        
+        E-mail: <input type="email" placeholder="Type something here..." /><br><br>
+        <!-- In place of email, anything you can put mostly text -->
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required>
+        <!-- use of label is even if you click on 'First name', it directs you to the box automatically and you can write there -->
+        
+        <br /> <br />
+
+        Sample name:<br> <input type="text" value="You can only read this" readonly>
+        
+        <br><br>
+            
+        Write about Yourself:<br><textarea cols="70" rows="10">You can resize the box...and can write the longer text here...</textarea>
+        
+        <p>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" max="2002-12-31" min="1995-01-02">
+        </p>    
+       
+        <p>
+            <label for="age">Age (between 18 and 50):</label>
+            <input type="range" id="age" name="age" min="18" max="50">
+        </p>
+
+        <p>
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" placeholder="abc" title="Three letter country code">
+            <!--input field's value is checked against, when the form is submitted-->
+        </p>
+
+        <p>
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple>
+        </p>
+        <p>To select multiple files, hold down the CTRL or SHIFT key while selecting.</p>
+
+        <select>
+                <option>Choose an option...</option>
+                <option value="1">1. Student</option>
+                <option value="2">2. Enterpreneur</option>
+        </select>
+            
+        <br /> <br />
+
+        <label for="color">Choose a colour:</label>
+        <input type = "radio" name = "colour" id="color" > Red
+        <input type = "radio" name = "colour" id="color" > Green
+        <!-- radio means circle, checkbox means square.
+        Give same name to both the colours so only one can be selected -->
+
+        <br /> <br />
+
+        <input type="checkbox" /> Click me!
+        <input type="checkbox" /> Don't Click me!
+            <!-- In checkbox, not necessary to click atleast one but in radio, it is-->
+            
+        <br> <br>
+            
+        <input type="radio" name="options" /> Option 1	 	
+        <br>
+            
+        <input type="radio" name="options" /> Option 2
+            
+        <br><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="3" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p><br>
+
+        <p><button type="button" onclick="alert('You cannot make any change further')">Click Me!</button></p>
+
+        <p><input type="reset"></p>
+
+        <input type="submit" value="Submit the form">
+
+    </fieldset>
+    </form>
+    
+</div>
+</body>
+</html
