@@ -1,0 +1,43 @@
+<!-- DOM : Document Object Model -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let containers = document.getElementsByClassName('container');
+        // containers represent an array of length 2 since this classname "container" is defined for 2 html tags & we know classes can be defined for many different tags. container[0] shows first class attributes.
+        console.log(containers);
+
+        // query selector returns its 1st attribute only
+        let sel = document.querySelector('#nav>li'); // return first selector having id nav>li
+        console.log("Selector returns ", sel)
+
+        let sel2 = document.querySelectorAll('#nav>li'); 
+        // for returning all matching elements
+        console.log("Selector returns ", sel2)
+        // sel2[0] = Home, sel2[1] = About,......
+
+    </script>
+</body>
+</html>
