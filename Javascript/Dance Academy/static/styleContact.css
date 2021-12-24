@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.classCon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  background: url(../static/contact.jpg);
+  background-size: cover;
+}
+
+h1 {
+  background-color: rgb(227 229 224);
+  border-color: #261102;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 12px 133px;
+  display: flex;
+  justify-content: center;
+}
+
+.myInput {
+  padding: 13px 21px 13px 20px;
+  margin: 12px;
+}
+
+.btn {
+  font-weight: bold;
+  width: 87px;
+  margin: auto;
+  background-color: rgb(153, 153, 153);
+  height: 38px;
+  border: 2px rgb(31, 29, 29) ridge;
+  border-radius: 5px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}

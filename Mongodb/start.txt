@@ -1,0 +1,9 @@
+To start MongoDb:
+open a powershell : type mongod (to start the server where data store)
+open another powershell : type mongo & do whatever mentioned in concept.js
+
+Inspite of using mongo, we can use mongoDb compass (app downloaded)
+There you don't have to type any code just new connection you get all the database. Steps: New Collection > Fill in Connection Fields Individually > Connect
+
+Moongoose is an ODM(Object Data Modeling) library for MongoDB & Node.js. It connects mongodb to node.js
+MongoDb as your database and Mongodb as a client. Mongo Shell connects your client with your MongoDb database.

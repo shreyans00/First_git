@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  color: white;
+  top: 35%;
+  left: 40%;
+}
+
+.container h1 {
+  font-family: "Nunito", sans-serif;
+  border-bottom: 4px solid rgb(136, 42, 136);
+  margin-bottom: 20px;
+  font-size: 35px;
+  padding: 10px 0;
+}
+
+.type {
+  background: none;
+  width: 80%;
+  border-bottom: 2px solid purple;
+  outline: none;
+  margin: 7px 12px;
+  font-size: 17px;
+}
+
+i {
+  margin-left: 5px;
+  margin-right: -7px;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  width: 24%;
+  margin: 18px 124px;
+  padding: 6px;
+  background: none;
+  color: rgb(165, 160, 160);
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgba(226, 190, 226, 0.411);
+  color: rgb(58, 54, 58);
+}
