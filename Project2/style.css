@@ -1,346 +1,98 @@
-* {
-  margin: 0px;
-  padding: 0px;
+*{
+  padding:0%;
+  margin: 0%;
 }
 
-.background {
-  background: rgba(0, 0, 0, 0.7) url("bg.jpg");
-  background-size: cover;
-  background-blend-mode: darken;
+body{
+  display: block;
+  text-align: center;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
-#logo {
-  display: inline;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: 4px solid rgb(116, 112, 112);
-  margin: 0 60px 0 70px;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
+.black{
+  background-color: black;
+  height: 55px;
   position: sticky;
   top: 0;
-  cursor: pointer;
+  cursor:pointer;
 }
 
-.adjust {
-  display: flex;
-  align-items: center;
+.burger{
+  position: sticky;
+  top: 60px;
+  cursor:pointer;
+
 }
 
-.nav {
-  list-style: none;
-  display: flex;
-  align-items: center;
+.line {
+  width: 25px;
+  background-color: rgb(11, 117, 53);
+  height: 4px;
+  margin: 5px 3px;
+  border-radius: 2px;
 }
 
-a {
-  padding: 4px;
-  margin: 0 20px 0 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+#whole{
+  background-color: rgba(232, 231, 229, 0.693);
+  margin: 8px 10px;
+  border-radius: 5px;
 }
 
-a:hover {
-  background-color: rgb(255, 255, 255);
-  border-radius: 3px;
-  color: black;
+#start{
+  padding-top:50px;
+  color: rgba(0, 0, 0, 0.778);
+  font-size: 1.4rem;
 }
 
-.sidebar {
-  position: absolute;
-  right: 20px;
+#start p{
+  padding:25px 0 18px 0;
+  font-size: 1rem;
 }
 
-.btn {
-  border-radius: 4px;
-  font-size: 15px;
-  padding: 3px 5px 3px 5px;
-  background-color: ivory;
-  color: black;
-  cursor: pointer;
-  outline: none;
-}
-
-#search {
-  font-size: 15px;
-  border-radius: 6px;
-  padding: 3px 5px 3px 5px;
-  cursor: pointer;
-  outline: none;
-}
-
-.section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  height: 100vh;
-}
-
-.firsthalf {
-  font-family: "Pushster", cursive;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  font-size: 1.2rem;
-}
-
-#h2 {
+#second{
+  background-color: white;
+  margin: 0 15px 0 15px;
   padding-bottom: 20px;
 }
 
-#img {
-  border-radius: 50%;
-  border: 4px solid rgb(126, 129, 129);
+#second img {
+  border: 10px white solid;
+  max-width: 97%;
 }
 
-.btn2 {
-  font-size: 20px;
-  border-radius: 6px;
-  padding: 4px 8px 4px 8px;
-  margin: 14px 7px 9px 14px;
-  background: none;
-  color: white;
-  cursor: pointer;
-  outline: none;
+#second p{
+  margin: 0 10px 0 10px;
 }
 
-/* About Us */
-
-.section2 {
-  background-color: ivory;
+#third{
+  margin:auto;
+  max-width: 600px;
+  text-align: left;
 }
 
-.innersection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 75%;
+#third h3{
+  text-align: center;
+  padding: 50px 0 30px 0;
+}
+
+#third li{
+  margin: 20px 0;
+  padding: 10px 0 0 0;
+}
+
+#quote{
+  padding:25px 0 30px 0;
+  font-style: italic;
+}
+
+#last{
+  max-width:1000px;
   margin: auto;
-  padding-top: 5%;
-  font-family: "Nunito", sans-serif;
-}
-.leftside {
-  display: flex;
-  margin-bottom: 100px;
+  padding: 30px 0 30px 0;
 }
 
-.rightside {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 100px;
-}
-
-.part img {
-  height: 12rem;
-  border: 3px ridge rgb(109, 108, 108);
-  border-radius: 30px;
-  margin-top: 10px;
-}
-
-.part h2 {
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.boxright {
-  margin-left: 50px;
-}
-
-.boxleft {
-  margin-right: 30px;
-}
-
-/* Contact */
-
-.classCon {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  background: url(contact.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.myForm {
-  width: 75%;
-}
-
-#h1 {
-  background-color: rgb(227 229 224);
-  border-color: #261102;
-  border-radius: 5px;
-  padding: 7px;
-  margin: 12px 133px;
-  display: flex;
-  justify-content: center;
-}
-
-.myInput {
-  padding: 13px 21px 13px 20px;
-  margin: 12px 60px;
-}
-
-.btn {
-  font-weight: bold;
-  width: 87px;
-  margin: auto;
-  background-color: rgb(153, 153, 153);
-  height: 38px;
-  border: 2px rgb(31, 29, 29) ridge;
-  border-radius: 5px;
-  margin-top: 7px;
-  margin-bottom: 20px;
-}
-
-/* Footer */
-
-#footer {
-  display: flex;
-  color: white;
-  background-color: black;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-}
-
-/* Media Queries */
-
-@media only screen and (max-width: 1140px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease-out;
-    height: 400px;
-    /* this height is important, otherwise the transition effect will not be reflected */
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav li {
-    padding: 20px 0 20px 20px;
-  }
-
-  a:hover {
-    background: none;
-    color: rgb(34, 141, 168);
-  }
-
-  .adjust {
-    display: flex;
-    flex-direction: column;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-  }
-
-  .burger {
-    position: absolute;
-    cursor: pointer;
-    right: 5px;
-    top: 5px;
-  }
-
-  .line {
-    width: 33px;
-    background-color: white;
-    height: 4px;
-    margin: 5px 3px;
-    border-radius: 2px;
-  }
-
-  .h-nav-responsive {
-    height: 60px;
-  }
-
-  .v-class-responsive {
-    opacity: 0;
-  }
-
-  .section {
-    flex-direction: column-reverse;
-    height: 600px;
-  }
-
-  .firsthalf {
-    width: 75%;
-  }
-
-  #h2 {
-    text-align: center;
-    margin-top: -30px;
-  }
-
-  #img {
-    width: 90%;
-    height: 70%;
-  }
-  .btn2 {
-    text-align: center;
-  }
-
-  .innersection {
-    text-align: center;
-    padding-top: 50px;
-  }
-
-  .part {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .part img {
-    border-radius: 40px;
-  }
-  .centerphoto {
-    display: inline-block;
-    width: 100%;
-    margin: auto;
-  }
-
-  .box {
-    text-align: left;
-  }
-
-  .boxright {
-    margin-left: 0px;
-  }
-
-  .boxright {
-    margin-right: 0px;
-  }
-
-  .leftside {
-    margin-bottom: 35px;
-  }
-
-  .rightside {
-    margin-bottom: 45px;
-  }
-
-  /* Contact */
-
-  #h1 {
-    font-size: 1.7rem;
-    margin: 0;
-  }
+#link{
+  text-decoration:underline;
+  color:rgb(64, 128, 171);
 }
